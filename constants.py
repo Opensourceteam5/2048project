@@ -1,3 +1,11 @@
+printf("오픈소스 팀원 5")
+printf("팀장 이준한")
+printf("조원 최수헌")
+printf("조원 강우림")
+printf("조원 이선호")
+printf("조원 손영우")
+printf("조원 김민구")
+printf("")
 level =int(input("난이도를 설정하세요 : "))
 
 if level == 3 :
