@@ -1,6 +1,6 @@
-SIZE = 600
-GRID_LEN = 10
-GRID_PADDING = 1
+SIZE = 400
+GRID_LEN = 4
+GRID_PADDING = 10
 
 BACKGROUND_COLOR_GAME = "#92877d"
 BACKGROUND_COLOR_CELL_EMPTY = "#9e948a"
@@ -38,6 +38,3 @@ KEY_J = "'j'"
 KEY_K = "'k'"
 KEY_L = "'l'"
 KEY_H = "'h'"
-
-KEY_O = "'o'"
-KEY_P = "'p'"

@@ -22,8 +22,7 @@ class GameGrid(Frame):
                          c.KEY_UP_ALT: logic.up, c.KEY_DOWN_ALT: logic.down,
                          c.KEY_LEFT_ALT: logic.left, c.KEY_RIGHT_ALT: logic.right,
                          c.KEY_H: logic.left, c.KEY_L: logic.right,
-                         c.KEY_K: logic.up, c.KEY_J: logic.down,
-                         c.KEY_O: logic.sizedown, c.KEY_P: logic.sizeup}
+                         c.KEY_K: logic.up, c.KEY_J: logic.down}
         
         self.grid_cells = []
         self.init_grid()
@@ -48,7 +47,7 @@ class GameGrid(Frame):
                           pady=c.GRID_PADDING)
                 t = Label(master=cell, text="",
                           bg=c.BACKGROUND_COLOR_CELL_EMPTY,
-                          justify=CENTER, font=c.FONT, width=2, height=1)
+                          justify=CENTER, font=c.FONT, width=5, height=2)
                 t.grid()
                 grid_row.append(t)
 
