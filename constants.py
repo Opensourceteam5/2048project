@@ -1,6 +1,18 @@
-SIZE = 400
-GRID_LEN = 4
-GRID_PADDING = 10
+level =int(input("난이도를 설정하세요 : "))
+
+if level == 3 :
+    SIZE = 400
+    GRID_LEN = 4
+    
+elif level == 2 :
+    SIZE = 400
+    GRID_LEN = 5
+    
+else :
+    SIZE = 400
+    GRID_LEN = 6
+    
+GRID_PADDING = 1
 
 BACKGROUND_COLOR_GAME = "#92877d"
 BACKGROUND_COLOR_CELL_EMPTY = "#9e948a"
