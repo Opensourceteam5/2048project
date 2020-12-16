@@ -206,4 +206,3 @@ def right(game):
     game = cover_up(game)[0]
     game = reverse(game)
     return game, done
-
