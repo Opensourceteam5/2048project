@@ -6,3 +6,9 @@
 ![오픈소스 팀 프로젝트](https://user-images.githubusercontent.com/72447176/102465836-81f9cf00-4091-11eb-8377-a7724a1965f3.png)
 
 게임을 시작하려면 puzzle.py 를 실행하세요!
+
+contributors :
+
+https://github.com/Choisoohun
+
+https://github.com/wnsgks3153
