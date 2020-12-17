@@ -73,16 +73,67 @@ class GameGrid(Frame):
         elif key in self.commands:
             self.matrix, done = self.commands[repr(event.char)](self.matrix)
             if done:
-                self.matrix = logic.add_two(self.matrix)
-                # record last move
-                self.history_matrixs.append(self.matrix)
-                self.update_grid_cells()
-                if logic.game_state(self.matrix) == 'win':
-                    self.grid_cells[1][1].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
-                    self.grid_cells[1][2].configure(text="Win!", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
-                if logic.game_state(self.matrix) == 'lose':
-                    self.grid_cells[1][1].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
-                    self.grid_cells[1][2].configure(text="Lose!", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                if c.level == 3 :
+                    self.matrix = logic.add_two(self.matrix)
+                    # record last move
+                    self.history_matrixs.append(self.matrix)
+                    self.update_grid_cells()
+                    if logic.game_state(self.matrix) == 'win':
+                    
+                        self.grid_cells[1][1].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][2].configure(text="Win!", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                   
+                    if logic.game_state(self.matrix) == 'lose':
+                    
+                        self.grid_cells[1][1].configure(text="you", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][2].configure(text="lose", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        
+                elif c.level == 2 :
+                    self.matrix = logic.add_two(self.matrix)
+                    # record last move
+                    self.history_matrixs.append(self.matrix)
+                    self.update_grid_cells()
+                    if logic.game_state(self.matrix) == 'win':
+                    
+                        self.grid_cells[1][1].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][3].configure(text="Win!", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                   
+                    if logic.game_state(self.matrix) == 'lose':
+                    
+                        self.grid_cells[1][1].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][3].configure(text="lose", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+
+                elif c.level == 1 :
+                    self.matrix = logic.add_two(self.matrix)
+                    # record last move
+                    self.history_matrixs.append(self.matrix)
+                    self.update_grid_cells()
+                    if logic.game_state(self.matrix) == 'win':
+                    
+                        self.grid_cells[2][2].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[2][3].configure(text="Win!", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                   
+                    if logic.game_state(self.matrix) == 'lose':
+                    
+                        self.grid_cells[2][2].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[2][3].configure(text="lose", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+
+
+                elif c.level == 0 :
+                    self.matrix = logic.add_two(self.matrix)
+                    # record last move
+                    self.history_matrixs.append(self.matrix)
+                    self.update_grid_cells()
+                    if logic.game_state(self.matrix) == 'win':
+                    
+                        self.grid_cells[1][0].configure(text="You", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][2].configure(text="Win!", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                   
+                    if logic.game_state(self.matrix) == 'lose':
+                    
+                        self.grid_cells[1][0].configure(text="DONT", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][1].configure(text="TRY", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
+                        self.grid_cells[1][2].configure(text="THIS", bg=c.BACKGROUND_COLOR_CELL_EMPTY)
 
     def generate_next(self):
         index = (gen(), gen())
