@@ -8,17 +8,25 @@ print("조원 김민구")
 print("")
 level =int(input("난이도를 설정하세요 : "))
 
-if level == 3 :
-    SIZE = 400
-    GRID_LEN = 4
+if level == 1 :
+    SIZE = 3
+    size = 1
+    GRID_LEN = 6
     
 elif level == 2 :
-    SIZE = 400
+    SIZE = 5
+    size = 2
     GRID_LEN = 5
     
+elif level == 3 :
+    SIZE = 5
+    size = 2
+    GRID_LEN = 4
+
 else :
-    SIZE = 400
-    GRID_LEN = 6
+    SIZE = 7
+    size = 3
+    GRID_LEN = 3
     
 GRID_PADDING = 1
 
@@ -59,3 +67,4 @@ KEY_J = "'j'"
 KEY_K = "'k'"
 KEY_L = "'l'"
 KEY_H = "'h'"
+
