@@ -6,7 +6,9 @@ print("조원 이선호")
 print("조원 손영우")
 print("조원 김민구")
 print("")
-level =int(input("난이도를 설정하세요 : "))
+print("[조작법] 위쪽:W 왼쪽:A 오른쪽:D 아래쪽:S")
+print("")
+level =int(input("난이도를 설정하세요(쉬움=1,보통=2,어려움=3) : "))
 
 if level == 1 :
     SIZE = 3
@@ -67,4 +69,5 @@ KEY_J = "'j'"
 KEY_K = "'k'"
 KEY_L = "'l'"
 KEY_H = "'h'"
+
 
