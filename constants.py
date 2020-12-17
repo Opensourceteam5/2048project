@@ -1,10 +1,10 @@
 print("오픈소스 팀원 5")
-print"팀장 이준한")
+print("팀장 이준한")
 print("조원 최수헌")
 print("조원 강우림")
 print("조원 이선호")
 print("조원 손영우")
-print"조원 김민구")
+print("조원 김민구")
 print("")
 level =int(input("난이도를 설정하세요 : "))
 
