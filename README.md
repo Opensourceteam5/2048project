@@ -1,5 +1,5 @@
 오픈소스 팀프로젝트 발표 영상
-[![오픈소스 팀 프로젝트](https://www.youtube.com/watch?v=Zt9QFaqhQFo)](https://www.youtube.com/watch?v=Zt9QFaqhQFo)
+![오픈소스 팀 프로젝트](https://user-images.githubusercontent.com/72612538/102477473-bf655900-409f-11eb-9a0a-a216390a7f67.PNG)(https://www.youtube.com/watch?v=Zt9QFaqhQFo)
 
 # 2048project
 이 게임은 깃허브에서 yangshun/2048-python 을 토대로 만들었습니다. 
