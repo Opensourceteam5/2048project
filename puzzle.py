@@ -14,7 +14,7 @@ class GameGrid(Frame):
         Frame.__init__(self)
 
         self.grid()
-        self.master.title('2048')
+        self.master.title('Open Source Team Project')
         self.master.bind("<Key>", self.key_down)
 
         self.commands = {c.KEY_UP: logic.up, c.KEY_DOWN: logic.down,
