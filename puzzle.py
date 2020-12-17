@@ -33,25 +33,89 @@ class GameGrid(Frame):
         self.mainloop()
 
     def init_grid(self):
-        background = Frame(self, bg=c.BACKGROUND_COLOR_GAME,
-                           width=c.SIZE, height=c.SIZE)
-        background.grid()
+        if c.level == 1 :
+            background = Frame(self, bg=c.BACKGROUND_COLOR_GAME,
+                               width=c.SIZE, height=c.size)
+            background.grid()
 
-        for i in range(c.GRID_LEN):
-            grid_row = []
-            for j in range(c.GRID_LEN):
-                cell = Frame(background, bg=c.BACKGROUND_COLOR_CELL_EMPTY,
-                             width=c.SIZE / c.GRID_LEN,
-                             height=c.SIZE / c.GRID_LEN)
-                cell.grid(row=i, column=j, padx=c.GRID_PADDING,
-                          pady=c.GRID_PADDING)
-                t = Label(master=cell, text="",
-                          bg=c.BACKGROUND_COLOR_CELL_EMPTY,
-                          justify=CENTER, font=c.FONT, width=5, height=2)
-                t.grid()
-                grid_row.append(t)
+            for i in range(c.GRID_LEN):
+                grid_row = []
+                for j in range(c.GRID_LEN):
+                    cell = Frame(background, bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                                 width=c.SIZE / c.GRID_LEN,
+                                 height=c.SIZE / c.GRID_LEN)
+                    cell.grid(row=i, column=j, padx=c.GRID_PADDING,
+                              pady=c.GRID_PADDING)
+                    t = Label(master=cell, text="",
+                              bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                              justify=CENTER, font=c.FONT, width=c.SIZE, height=c.size)
+                    t.grid()
+                    grid_row.append(t)
 
-            self.grid_cells.append(grid_row)
+                self.grid_cells.append(grid_row)
+
+        elif c.level == 2 :
+            background = Frame(self, bg=c.BACKGROUND_COLOR_GAME,
+                               width=c.SIZE, height=c.size)
+            background.grid()
+
+            for i in range(c.GRID_LEN):
+                grid_row = []
+                for j in range(c.GRID_LEN):
+                    cell = Frame(background, bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                                 width=c.SIZE / c.GRID_LEN,
+                                 height=c.SIZE / c.GRID_LEN)
+                    cell.grid(row=i, column=j, padx=c.GRID_PADDING,
+                              pady=c.GRID_PADDING)
+                    t = Label(master=cell, text="",
+                              bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                              justify=CENTER, font=c.FONT, width=c.SIZE, height=c.size)
+                    t.grid()
+                    grid_row.append(t)
+
+                self.grid_cells.append(grid_row)
+
+        if c.level == 3 :
+            background = Frame(self, bg=c.BACKGROUND_COLOR_GAME,
+                               width=c.SIZE, height=c.size)
+            background.grid()
+
+            for i in range(c.GRID_LEN):
+                grid_row = []
+                for j in range(c.GRID_LEN):
+                    cell = Frame(background, bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                                 width=c.SIZE / c.GRID_LEN,
+                                 height=c.SIZE / c.GRID_LEN)
+                    cell.grid(row=i, column=j, padx=c.GRID_PADDING,
+                              pady=c.GRID_PADDING)
+                    t = Label(master=cell, text="",
+                              bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                              justify=CENTER, font=c.FONT, width=c.SIZE, height=c.size)
+                    t.grid()
+                    grid_row.append(t)
+
+                self.grid_cells.append(grid_row)
+
+        if c.level == 0 :
+            background = Frame(self, bg=c.BACKGROUND_COLOR_GAME,
+                               width=c.SIZE, height=c.size)
+            background.grid()
+
+            for i in range(c.GRID_LEN):
+                grid_row = []
+                for j in range(c.GRID_LEN):
+                    cell = Frame(background, bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                                 width=c.SIZE / c.GRID_LEN,
+                                 height=c.SIZE / c.GRID_LEN)
+                    cell.grid(row=i, column=j, padx=c.GRID_PADDING,
+                              pady=c.GRID_PADDING)
+                    t = Label(master=cell, text="",
+                              bg=c.BACKGROUND_COLOR_CELL_EMPTY,
+                              justify=CENTER, font=c.FONT, width=c.SIZE, height=c.size)
+                    t.grid()
+                    grid_row.append(t)
+
+                self.grid_cells.append(grid_row)
 
     def update_grid_cells(self):
         for i in range(c.GRID_LEN):
